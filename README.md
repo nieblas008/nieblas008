@@ -31,9 +31,9 @@ Wanna get in touch with me? Happy to help! Reach me out at [nieblas008\@icloud.c
 
 ### 📊 **Stats**
 
-[![Ricardo's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=rinieblas&show_icons=true&theme=dark&count_private=true&bg_color=00000000#gh-dark-mode-only)](https://github.com/nieblas008/github-readme-stats#gh-dark-mode-only)
+[![Ricardo's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=nieblas008&show_icons=true&theme=dark&count_private=true&bg_color=00000000#gh-dark-mode-only)](https://github.com/nieblas008/github-readme-stats#gh-dark-mode-only)
 
-[![Ricardo's GitHub stats-Light](https://github-readme-stats.vercel.app/api?username=rinieblas&show_icons=true&theme=default&count_private=true&bg_color=00000000#gh-light-mode-only)](https://github.com/nieblas008/github-readme-stats#gh-light-mode-only)
+[![Ricardo's GitHub stats-Light](https://github-readme-stats.vercel.app/api?username=nieblas008&show_icons=true&theme=default&count_private=true&bg_color=00000000#gh-light-mode-only)](https://github.com/nieblas008/github-readme-stats#gh-light-mode-only)
 
 <!--
 
