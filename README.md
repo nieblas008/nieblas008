@@ -6,7 +6,7 @@ I'm a developer focused primarily on web development, building the best version 
 
 All coding projects are built from the ground up, from planning and designing all the way to solving real-life problems with code. I'll do my best on adapting to your needs and creating a solution that matches exactly all your needs.
 
-Wanna get in touch with me? Happy to help! Reach me out at [nieblas008\@icloud.com](mailto:nieblas008\@icloud.com)
+Wanna get in touch with me? Happy to help! Reach me out at [dev.nieblas\@icloud.com](mailto:dev.nieblas\@icloud.com)
 
 #
 

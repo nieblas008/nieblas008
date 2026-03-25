@@ -1,0 +1,50 @@
+{
+  "navigation": {
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "switchLang": "ES"
+  },
+  "hero": {
+    "headline": "Stop Losing Clients to Your Competitors' Websites.",
+    "subheadline": "I help small businesses turn their social media following into a high-converting, professional website that builds trust and drives sales.",
+    "primaryCTA": "Let's Talk",
+    "secondaryCTA": "View My Work"
+  },
+  "about": {
+    "headline": "Hi, I'm your technical partner.",
+    "copy": "I'm a Computer Engineering student from Mexico with a passion for building world-class web experiences. I combine rock-solid engineering (Python, Java, C++) with beautiful, intuitive design. My goal isn't just to write code—it's to make your business look premium and perform flawlessly."
+  },
+  "services": {
+    "headline": "How I Help You Grow",
+    "items": [
+      {
+        "title": "Landing Pages",
+        "description": "Turn ad clicks into paying clients with high-converting, single-page experiences."
+      },
+      {
+        "title": "Business Websites",
+        "description": "Elevate your brand with a premium digital storefront that establishes immediate trust."
+      },
+      {
+        "title": "Scalable Infrastructure",
+        "description": "Future-proof your business with custom digital infrastructure that handles scheduling, payments, and client management as you grow."
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "Featured Work"
+  },
+  "contact": {
+    "headline": "Ready to Elevate Your Brand?",
+    "emailUs": "Email Me",
+    "bookCall": "Book a Consultation",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Tell me about your business goals",
+      "submit": "Send Message"
+    }
+  }
+}

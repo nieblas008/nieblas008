@@ -1,0 +1,50 @@
+{
+  "navigation": {
+    "about": "Sobre mí",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "contact": "Contacto",
+    "switchLang": "EN"
+  },
+  "hero": {
+    "headline": "Deja de Perder Clientes por Culpa del Sitio Web de tu Competencia.",
+    "subheadline": "Ayudo a pequeñas empresas a transformar sus redes sociales en sitios web profesionales, listos para generar confianza y ventas.",
+    "primaryCTA": "Hablemos",
+    "secondaryCTA": "Ver mi trabajo"
+  },
+  "about": {
+    "headline": "Hola, soy tu socio tecnológico.",
+    "copy": "Soy un estudiante de Ingeniería en Computación de México apasionado por crear experiencias web de primer nivel. Combino ingeniería sólida (Python, Java, C++) con un diseño hermoso e intuitivo. Mi objetivo no es solo escribir código, sino hacer que tu negocio se vea premium y funcione sin problemas."
+  },
+  "services": {
+    "headline": "Cómo Te Ayudo a Crecer",
+    "items": [
+      {
+        "title": "Landing Pages",
+        "description": "Convierte los clics en anuncios en clientes de pago a través de sitios de alta conversión de una sola página."
+      },
+      {
+        "title": "Sitios Web Empresariales",
+        "description": "Eleva tu marca con un escaparate digital premium que genera confianza inmediata."
+      },
+      {
+        "title": "Infraestructura Escalable",
+        "description": "Prepara tu empresa para el futuro con infraestructura digital personalizada que maneja citas, pagos y clientes a medida que creces."
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "Bajo la lupa"
+  },
+  "contact": {
+    "headline": "¿Listo para Elevar Tu Marca?",
+    "emailUs": "Envíame un Correo",
+    "bookCall": "Agenda una Consulta",
+    "form": {
+      "name": "Tu Nombre",
+      "email": "Tu Correo",
+      "message": "Cuéntame los objetivos de tu negocio",
+      "submit": "Enviar Mensaje"
+    }
+  }
+}
