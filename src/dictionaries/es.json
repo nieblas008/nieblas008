@@ -3,48 +3,49 @@
     "about": "Sobre mí",
     "services": "Servicios",
     "portfolio": "Portafolio",
+    "testimonials": "Testimonios",
     "contact": "Contacto",
     "switchLang": "EN"
   },
   "hero": {
-    "headline": "Deja de Perder Clientes por Culpa del Sitio Web de tu Competencia.",
-    "subheadline": "Ayudo a pequeñas empresas a transformar sus redes sociales en sitios web profesionales, listos para generar confianza y ventas.",
-    "primaryCTA": "Hablemos",
+    "headline": "Convierte a tu Audiencia en Clientes de Alto Valor.",
+    "subheadline": "Supera a tu competencia con una experiencia digital premium. Diseño sitios web de alta conversión para empresas listas para escalar más allá de las redes sociales.",
+    "primaryCTA": "Agenda una Estrategia Gratuita",
     "secondaryCTA": "Ver mi trabajo"
   },
   "about": {
-    "headline": "Hola, soy tu socio tecnológico.",
-    "copy": "Soy un estudiante de Ingeniería en Computación de México apasionado por crear experiencias web de primer nivel. Combino ingeniería sólida (Python, Java, C++) con un diseño hermoso e intuitivo. Mi objetivo no es solo escribir código, sino hacer que tu negocio se vea premium y funcione sin problemas."
+    "headline": "Más que un desarrollador. Tu aliado digital.",
+    "copy": "Creo experiencias web de primer nivel que hacen que tu negocio luzca premium y funcione sin fallas. Al combinar ingeniería robusta con diseño intuitivo, desarrollo plataformas digitales que no solo se ven increíbles, sino que generan ventas, construyen confianza y convierten visitantes en clientes reales."
   },
   "services": {
     "headline": "Cómo Te Ayudo a Crecer",
     "items": [
       {
-        "title": "Landing Pages",
-        "description": "Convierte los clics en anuncios en clientes de pago a través de sitios de alta conversión de una sola página."
+        "title": "Landing Pages de Alta Conversión",
+        "description": "Convierte el tráfico de redes sociales y campañas en clientes reales con páginas enfocadas en vender."
       },
       {
-        "title": "Sitios Web Empresariales",
-        "description": "Eleva tu marca con un escaparate digital premium que genera confianza inmediata."
+        "title": "Sitios Web Premium",
+        "description": "Eleva tu marca con una presencia digital profesional que proyecta autoridad y genera confianza inmediata."
       },
       {
-        "title": "Infraestructura Escalable",
-        "description": "Prepara tu empresa para el futuro con infraestructura digital personalizada que maneja citas, pagos y clientes a medida que creces."
+        "title": "Sistemas Empresariales Integrados",
+        "description": "Automatiza tu crecimiento. Creo soluciones a medida que gestionan tus citas, pagos y clientes sin fricción."
       }
     ]
   },
   "portfolio": {
-    "headline": "Bajo la lupa"
+    "headline": "Proyectos Destacados"
   },
   "contact": {
-    "headline": "¿Listo para Elevar Tu Marca?",
+    "headline": "Construyamos la Siguiente Etapa de tu Negocio.",
     "emailUs": "Envíame un Correo",
-    "bookCall": "Agenda una Consulta",
+    "bookCall": "Agenda una Consulta Gratuita",
     "form": {
       "name": "Tu Nombre",
       "email": "Tu Correo",
-      "message": "Cuéntame los objetivos de tu negocio",
-      "submit": "Enviar Mensaje"
+      "message": "Cuéntame sobre los objetivos de tu negocio y qué te gustaría lograr",
+      "submit": "Comenzar Proyecto"
     }
   }
 }

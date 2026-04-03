@@ -49,3 +49,27 @@ CREATE POLICY "Admins can manage testimonials."
   ON public.testimonials FOR ALL
   USING (auth.uid() IS NOT NULL)
   WITH CHECK (auth.uid() IS NOT NULL);
+
+-- 6. Create the messages table for Contact Form
+CREATE TABLE public.messages (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  name TEXT NOT NULL,
+  email TEXT NOT NULL,
+  message TEXT NOT NULL,
+  status TEXT DEFAULT 'unread' CHECK (status IN ('unread', 'read', 'archived')),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
+);
+
+-- 7. Enable RLS for messages table
+ALTER TABLE public.messages ENABLE ROW LEVEL SECURITY;
+
+-- 8. Create Policies for messages table
+-- Allow anyone to INSERT into the messages table (Contact Form submission)
+CREATE POLICY "Anyone can submit a message." 
+  ON public.messages FOR INSERT 
+  WITH CHECK (true);
+
+-- Allow ONLY authenticated users (Admins) to READ/UPDATE/DELETE messages
+CREATE POLICY "Only admins can manage messages." 
+  ON public.messages FOR ALL 
+  USING (auth.uid() IS NOT NULL);

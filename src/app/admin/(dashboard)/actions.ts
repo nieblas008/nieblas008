@@ -92,3 +92,44 @@ export async function toggleTestimonialVisibility(formData: FormData) {
     revalidatePath('/admin')
   }
 }
+
+export async function submitContactForm(formData: FormData) {
+  const supabase = await createClient()
+  const name = formData.get('name') as string
+  const email = formData.get('email') as string
+  const message = formData.get('message') as string
+
+  const { error } = await supabase.from('messages').insert({
+    name, email, message,
+  })
+
+  if (error) {
+    return { success: false, error: error.message }
+  }
+
+  revalidatePath('/admin')
+  return { success: true }
+}
+
+export async function deleteMessage(formData: FormData) {
+  const supabase = await createClient()
+  const id = formData.get('id') as string
+  const { error } = await supabase.from('messages').delete().eq('id', id)
+  
+  if (!error) {
+    revalidatePath('/admin')
+  }
+}
+
+export async function toggleMessageStatus(formData: FormData) {
+  const supabase = await createClient()
+  const id = formData.get('id') as string
+  const currentStatus = formData.get('currentStatus') as string
+  const newStatus = currentStatus === 'unread' ? 'read' : 'unread'
+  
+  const { error } = await supabase.from('messages').update({ status: newStatus }).eq('id', id)
+  
+  if (!error) {
+    revalidatePath('/admin')
+  }
+}

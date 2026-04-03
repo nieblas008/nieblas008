@@ -5,6 +5,8 @@ import { ThemeProvider } from '@/components/shared/ThemeProvider';
 import { Navbar } from '@/components/shared/Navbar';
 import { Footer } from '@/components/shared/Footer';
 import { getDictionary, Locale } from '@/lib/dictionary';
+import AnimatedBackground from '@/components/shared/AnimatedBackground';
+import { createClient } from '@/utils/supabase/server';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -30,6 +32,16 @@ export default async function RootLayout({
 }>) {
   const { lang } = await params;
   const dict = await getDictionary(lang as Locale);
+  const supabase = await createClient();
+
+  // Quick check for data existence
+  const [
+    { count: projectsCount },
+    { count: testimonialsCount }
+  ] = await Promise.all([
+    supabase.from('projects').select('*', { count: 'exact', head: true }).eq('is_published', true),
+    supabase.from('testimonials').select('*', { count: 'exact', head: true }).eq('is_published', true)
+  ]);
 
   return (
     <html lang={lang} suppressHydrationWarning>
@@ -43,7 +55,13 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar dict={dict} lang={lang} />
+          <AnimatedBackground />
+          <Navbar 
+            dict={dict} 
+            lang={lang} 
+            hasProjects={(projectsCount ?? 0) > 0} 
+            hasTestimonials={(testimonialsCount ?? 0) > 0} 
+          />
           <main className="min-h-screen pt-24">
             {children}
           </main>

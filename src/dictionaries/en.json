@@ -3,48 +3,49 @@
     "about": "About",
     "services": "Services",
     "portfolio": "Portfolio",
+    "testimonials": "Testimonials",
     "contact": "Contact",
     "switchLang": "ES"
   },
   "hero": {
-    "headline": "Stop Losing Clients to Your Competitors' Websites.",
-    "subheadline": "I help small businesses turn their social media following into a high-converting, professional website that builds trust and drives sales.",
-    "primaryCTA": "Let's Talk",
+    "headline": "Turn Your Audience into High-Paying Clients.",
+    "subheadline": "Outshine your competitors with a premium digital experience. I build high-converting websites for small businesses ready to scale beyond social media.",
+    "primaryCTA": "Book a Strategy Call",
     "secondaryCTA": "View My Work"
   },
   "about": {
-    "headline": "Hi, I'm your technical partner.",
-    "copy": "I'm a Computer Engineering student from Mexico with a passion for building world-class web experiences. I combine rock-solid engineering (Python, Java, C++) with beautiful, intuitive design. My goal isn't just to write code—it's to make your business look premium and perform flawlessly."
+    "headline": "Not just a developer. Your technical partner.",
+    "copy": "I build world-class web experiences that make your business look premium and perform flawlessly. By combining rock-solid engineering with intuitive design, I create digital storefronts that don't just look good—they actually drive growth, build trust, and convert visitors into clients."
   },
   "services": {
     "headline": "How I Help You Grow",
     "items": [
       {
-        "title": "Landing Pages",
-        "description": "Turn ad clicks into paying clients with high-converting, single-page experiences."
+        "title": "Sales-Driven Landing Pages",
+        "description": "Turn ad clicks and social traffic into paying clients with hyper-focused, high-converting pages."
       },
       {
-        "title": "Business Websites",
-        "description": "Elevate your brand with a premium digital storefront that establishes immediate trust."
+        "title": "Premium Business Websites",
+        "description": "Elevate your brand with a professional digital storefront that instantly establishes authority and trust."
       },
       {
-        "title": "Scalable Infrastructure",
-        "description": "Future-proof your business with custom digital infrastructure that handles scheduling, payments, and client management as you grow."
+        "title": "Integrated Business Systems",
+        "description": "Automate your growth. I build custom solutions that seamlessly handle your real-world needs, from scheduling to payments and client management."
       }
     ]
   },
   "portfolio": {
-    "headline": "Featured Work"
+    "headline": "Featured Projects"
   },
   "contact": {
-    "headline": "Ready to Elevate Your Brand?",
+    "headline": "Let's Build Your Next Stage of Growth.",
     "emailUs": "Email Me",
-    "bookCall": "Book a Consultation",
+    "bookCall": "Book a Free Consultation",
     "form": {
       "name": "Your Name",
       "email": "Your Email",
-      "message": "Tell me about your business goals",
-      "submit": "Send Message"
+      "message": "Tell me about your business goals and what you want to achieve",
+      "submit": "Get Your Custom Proposal"
     }
   }
 }
