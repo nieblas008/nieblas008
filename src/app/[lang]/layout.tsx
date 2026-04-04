@@ -19,7 +19,7 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: 'Portfolio | Premium Web Engineering',
+  title: 'Ricardo Nieblas',
   description: 'Helping businesses transform their online presence with premium, high-converting websites.',
 };
 
