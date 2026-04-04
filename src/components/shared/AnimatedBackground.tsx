@@ -17,15 +17,18 @@ export default function AnimatedBackground() {
     let animationFrameId: number;
     let points: { x: number; y: number; rotation: number }[] = [];
     
-    const gridSpacing = 48;
+    // Core parameters (density will change based on device)
+    let gridSpacing = 48;
     const lineLength = 12;
     const lineWidth = 2;
     const rotationSpeed = 0.25;
 
     let mouseX = window.innerWidth / 2;
     let mouseY = window.innerHeight / 2;
+    let isMobile = false;
 
     const handleMouseMove = (e: MouseEvent) => {
+      if (isMobile) return; // Ignore real mouse on simulated devices
       mouseX = e.clientX;
       mouseY = e.clientY;
     };
@@ -33,6 +36,11 @@ export default function AnimatedBackground() {
     const resize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+      
+      // Determine if touch/mobile for performance gating and automated movement
+      isMobile = window.matchMedia?.("(pointer: coarse)").matches || window.innerWidth <= 768;
+      // Drastically reduce density on mobile to prevent blocking the scrolling paint thread
+      gridSpacing = isMobile ? 84 : 48;
       
       points = [];
       for (let x = 0; x < canvas.width; x += gridSpacing) {
@@ -55,6 +63,16 @@ export default function AnimatedBackground() {
       
       ctx.lineWidth = lineWidth;
 
+      // Simulate a graceful, winding phantom cursor if we are on a mobile device
+      if (isMobile) {
+        const time = performance.now() / 2500;
+        mouseX = canvas.width / 2 + Math.sin(time) * (canvas.width / 2.5);
+        mouseY = canvas.height / 2 + Math.cos(time * 0.8) * (canvas.height / 2.5);
+      }
+
+      // Group rendering to avoid excessive context switches
+      ctx.strokeStyle = `rgba(${colorRGB}, 1)`; // Base stroke state set here initially
+
       points.forEach((p) => {
         const dxM = mouseX - p.x;
         const dyM = mouseY - p.y;
@@ -75,6 +93,7 @@ export default function AnimatedBackground() {
         let alpha = 255 + (distanceToMouse) * (50 - 255) / window.innerWidth;
         alpha = Math.max(0, Math.min(255, alpha)) / 255;
 
+        // We still must change alpha per line unfortunately unless we group by identical alpha mapping
         ctx.strokeStyle = `rgba(${colorRGB}, ${alpha})`;
         ctx.beginPath();
         ctx.moveTo(p.x - dx, p.y - dy);
