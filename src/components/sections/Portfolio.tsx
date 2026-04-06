@@ -23,15 +23,28 @@ export function Portfolio({ dict, projects }: { dict: any, projects: any[] }) {
             rel="noreferrer"
             className="group relative aspect-[4/3] rounded-3xl overflow-hidden border border-foreground/10 bg-foreground/5 cursor-pointer block"
           >
+            {/* Project Image / Background fallback */}
+            {p.image_url ? (
+              <div className="absolute inset-0">
+                <img 
+                  src={p.image_url} 
+                  alt={p.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
+              </div>
+            ) : (
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/5 to-foreground/10 group-hover:from-foreground/10 group-hover:to-foreground/20 transition-colors duration-500" />
+            )}
+
             {/* Minimalist Content */}
-            <div className="absolute inset-0 flex flex-col justify-between p-8 md:p-12 z-10 opacity-80 group-hover:opacity-100 transition-opacity">
-              <div className="flex justify-between items-start">
-                <div className="w-16 h-16 rounded-2xl bg-background/50 backdrop-blur-md flex items-center justify-center border border-foreground/10">
-                  <span className="font-serif italic font-medium">B.{i + 1}</span>
-                </div>
+            <div className="absolute inset-0 flex flex-col justify-between p-8 md:p-12 z-10">
+              <div className="flex justify-end items-start">
                 {p.project_url && (
-                  <div className="w-12 h-12 rounded-full bg-background/50 backdrop-blur-md flex items-center justify-center border border-foreground/10 opacity-0 -translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                    <ArrowUpRight className="w-5 h-5 text-foreground" />
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#000099] to-[#0000FF] p-[1.5px] opacity-0 -translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-md shadow-[#0000FF]/20">
+                    <div className="w-full h-full bg-background/80 backdrop-blur-md rounded-full flex items-center justify-center">
+                      <ArrowUpRight className="w-5 h-5 text-foreground" />
+                    </div>
                   </div>
                 )}
               </div>

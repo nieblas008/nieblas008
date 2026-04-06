@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter, Newsreader } from 'next/font/google';
 import '../globals.css';
 import { ThemeProvider } from '@/components/shared/ThemeProvider';
@@ -18,9 +18,27 @@ const newsreader = Newsreader({
   subsets: ['latin'],
 });
 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#000000' },
+  ],
+};
+
 export const metadata: Metadata = {
   title: 'Ricardo Nieblas',
   description: 'Helping businesses transform their online presence with premium, high-converting websites.',
+  manifest: '/site.webmanifest',
+  icons: {
+    apple: '/icons/apple-touch-icon.png',
+    other: [
+      {
+        rel: 'mask-icon',
+        url: '/icons/logo-adaptable.svg',
+        color: '#5bbad5',
+      },
+    ],
+  },
 };
 
 export default async function RootLayout({
@@ -56,11 +74,11 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           <AnimatedBackground />
-          <Navbar 
-            dict={dict} 
-            lang={lang} 
-            hasProjects={(projectsCount ?? 0) > 0} 
-            hasTestimonials={(testimonialsCount ?? 0) > 0} 
+          <Navbar
+            dict={dict}
+            lang={lang}
+            hasProjects={(projectsCount ?? 0) > 0}
+            hasTestimonials={(testimonialsCount ?? 0) > 0}
           />
           <main className="min-h-screen pt-24">
             {children}

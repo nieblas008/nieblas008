@@ -13,11 +13,13 @@ export function Hero({ dict }: { dict: any }) {
         </p>
         
         <div className="pt-8 flex flex-col sm:flex-row gap-6 justify-center items-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300 fill-mode-both">
-          <a href="#contact" className="px-10 py-5 bg-foreground text-background text-lg font-medium rounded-full cursor-pointer hover:scale-105 transition-transform duration-300 shadow-xl">
+          <a href="#contact" className="px-10 py-5 bg-gradient-to-r from-[#000099] to-[#0000FF] text-white border-0 hover:opacity-90 text-lg font-medium rounded-full cursor-pointer hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-[#0000FF]/20">
             {dict.primaryCTA}
           </a>
-          <a href="#portfolio" className="px-10 py-5 bg-transparent border-2 border-foreground text-foreground text-lg font-medium rounded-full cursor-pointer hover:bg-foreground hover:text-background transition-all duration-300 shadow-sm hover:shadow-xl">
-            {dict.secondaryCTA}
+          <a href="#portfolio" className="relative inline-flex rounded-full p-[2px] bg-gradient-to-r from-[#000099] to-[#0000FF] group shadow-sm hover:shadow-xl shadow-[#0000FF]/10 transition-all duration-300">
+            <span className="flex w-full items-center justify-center rounded-full bg-background group-hover:bg-transparent px-10 py-5 text-lg font-medium transition-colors duration-300 group-hover:text-white text-foreground">
+              {dict.secondaryCTA}
+            </span>
           </a>
         </div>
       </div>

@@ -16,7 +16,7 @@ export default function AnimatedBackground() {
 
     let animationFrameId: number;
     let points: { x: number; y: number; rotation: number }[] = [];
-    
+
     // Core parameters (density will change based on device)
     let gridSpacing = 48;
     const lineLength = 12;
@@ -36,12 +36,12 @@ export default function AnimatedBackground() {
     const resize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
-      
+
       // Determine if touch/mobile for performance gating and automated movement
       isMobile = window.matchMedia?.("(pointer: coarse)").matches || window.innerWidth <= 768;
       // Drastically reduce density on mobile to prevent blocking the scrolling paint thread
       gridSpacing = isMobile ? 84 : 48;
-      
+
       points = [];
       for (let x = 0; x < canvas.width; x += gridSpacing) {
         for (let y = 0; y < canvas.height; y += gridSpacing) {
@@ -56,11 +56,11 @@ export default function AnimatedBackground() {
 
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
+
       // Determine line color based on resolved theme
       const isDark = resolvedTheme !== "light"; // default to dark if undefined
-      const colorRGB = isDark ? "50, 50, 50" : "205, 205, 205";
-      
+      const colorRGB = isDark ? "50, 50, 50" : "200, 200, 200";
+
       ctx.lineWidth = lineWidth;
 
       // Simulate a graceful, winding phantom cursor if we are on a mobile device

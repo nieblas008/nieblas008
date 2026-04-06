@@ -16,10 +16,11 @@ export async function createProject(formData: FormData) {
   const title = formData.get('title') as string
   const description = formData.get('description') as string
   const project_url = formData.get('project_url') as string
+  const image_url = formData.get('image_url') as string
   const is_published = formData.get('is_published') === 'on'
 
   const { error } = await supabase.from('projects').insert({
-    title, description, project_url, is_published,
+    title, description, project_url, image_url, is_published,
   })
 
   if (!error) {
@@ -57,10 +58,12 @@ export async function createTestimonial(formData: FormData) {
   const author_name = formData.get('author_name') as string
   const author_title = formData.get('author_title') as string
   const content = formData.get('content') as string
+  const rating = parseFloat(formData.get('rating') as string) || 5.0
+  const author_image_url = formData.get('author_image_url') as string
   const is_published = formData.get('is_published') === 'on'
 
   const { error } = await supabase.from('testimonials').insert({
-    author_name, author_title, content, is_published,
+    author_name, author_title, content, rating, author_image_url, is_published,
   })
 
   if (!error) {

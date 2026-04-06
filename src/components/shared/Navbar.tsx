@@ -71,7 +71,7 @@ export function Navbar({
                 alt="Ricardo Nieblas Logo" 
                 width={32} 
                 height={32} 
-                className="dark:invert w-full h-full"
+                className="w-full h-full"
                 priority
               />
             </Link>
@@ -95,7 +95,7 @@ export function Navbar({
                 <ThemeToggle />
               </>
             )}
-            <a href={`/${lang}#contact`} className="hidden md:block px-5 py-2 bg-foreground text-background text-sm font-medium rounded-full hover:scale-105 transition-transform whitespace-nowrap">
+            <a href={`/${lang}#contact`} className="hidden md:block px-5 py-2 bg-gradient-to-r from-[#000099] to-[#0000FF] hover:opacity-90 transition-opacity text-white text-sm font-medium rounded-full cursor-pointer whitespace-nowrap">
               {dict.navigation.contact}
             </a>
           </div>
@@ -137,7 +137,7 @@ export function Navbar({
             <a href={`/${lang}#testimonials`} onClick={() => setIsOpen(false)} className="hover:opacity-70 transition-opacity">{dict.navigation.testimonials}</a>
           )}
           
-          <a href={`/${lang}#contact`} onClick={() => setIsOpen(false)} className="px-10 py-4 mt-8 bg-foreground text-background font-sans font-medium rounded-full text-lg shadow-xl shadow-foreground/20 active:scale-95 transition-transform">
+          <a href={`/${lang}#contact`} onClick={() => setIsOpen(false)} className="px-10 py-4 mt-8 bg-gradient-to-r from-[#000099] to-[#0000FF] text-white font-sans font-medium rounded-full text-lg shadow-xl shadow-[#0000FF]/20 active:scale-95 transition-transform">
             {dict.navigation.contact}
           </a>
 

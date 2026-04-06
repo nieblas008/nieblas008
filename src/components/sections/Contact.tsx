@@ -132,7 +132,7 @@ export function Contact({ dict }: { dict: any }) {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-4 px-8 bg-foreground text-background font-medium rounded-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 mt-4 cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 shadow-lg shadow-black/5"
+                className="w-full py-4 px-8 bg-gradient-to-r from-[#000099] to-[#0000FF] text-white font-medium rounded-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 mt-4 cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 shadow-lg shadow-[#0000FF]/20"
               >
                 {isSubmitting ? (
                   <>
