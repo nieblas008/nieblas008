@@ -1,6 +1,7 @@
-import { Star, StarHalf } from "lucide-react";
+import Image from "next/image";
+import { Star } from "lucide-react";
 
-export function Testimonials({ testimonials }: { testimonials: any[] }) {
+export function Testimonials({ testimonials, lang, dict }: { testimonials: any[], lang: string, dict: any }) {
   if (!testimonials || testimonials.length === 0) return null;
 
   const renderStars = (rating: number = 5) => {
@@ -45,7 +46,7 @@ export function Testimonials({ testimonials }: { testimonials: any[] }) {
       </svg>
       <div className="text-center mb-16 space-y-6">
         <h2 className="text-4xl md:text-5xl font-serif font-medium tracking-tight">
-          What Clients Say
+          {dict.headline}
         </h2>
         <div className="w-20 h-1 bg-foreground/20 rounded-full mx-auto" />
       </div>
@@ -57,14 +58,16 @@ export function Testimonials({ testimonials }: { testimonials: any[] }) {
               {renderStars(t.rating)}
             </div>
             <p className="font-serif italic text-lg leading-relaxed text-foreground/70">
-              "{t.content}"
+              "{lang === 'es' ? (t.content_es || t.content) : t.content}"
             </p>
             <div className="flex items-center gap-4 pt-4 border-t border-foreground/10">
               <div className="w-12 h-12 rounded-full border border-foreground/10 overflow-hidden bg-foreground/5 flex items-center justify-center">
                 {t.author_image_url ? (
-                  <img 
-                    src={t.author_image_url} 
+                  <Image
+                    src={t.author_image_url}
                     alt={t.author_name}
+                    width={48}
+                    height={48}
                     className="w-full h-full object-cover"
                   />
                 ) : (
@@ -75,7 +78,11 @@ export function Testimonials({ testimonials }: { testimonials: any[] }) {
               </div>
               <div>
                 <div className="font-medium">{t.author_name}</div>
-                {t.author_title && <div className="text-sm text-foreground/50">{t.author_title}</div>}
+                {t.author_title && (
+                  <div className="text-sm text-foreground/50">
+                    {lang === 'es' ? (t.author_title_es || t.author_title) : t.author_title}
+                  </div>
+                )}
               </div>
             </div>
           </div>

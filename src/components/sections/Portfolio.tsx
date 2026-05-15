@@ -1,6 +1,7 @@
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
-export function Portfolio({ dict, projects }: { dict: any, projects: any[] }) {
+export function Portfolio({ dict, projects, lang }: { dict: any, projects: any[], lang: string }) {
   if (!projects || projects.length === 0) return null;
 
   return (
@@ -26,10 +27,12 @@ export function Portfolio({ dict, projects }: { dict: any, projects: any[] }) {
             {/* Project Image / Background fallback */}
             {p.image_url ? (
               <div className="absolute inset-0">
-                <img 
-                  src={p.image_url} 
-                  alt={p.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                <Image
+                  src={p.image_url}
+                  alt={lang === 'es' ? (p.title_es || p.title) : p.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
               </div>
@@ -50,8 +53,12 @@ export function Portfolio({ dict, projects }: { dict: any, projects: any[] }) {
               </div>
               
               <div className="space-y-3 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <h3 className="text-2xl font-bold text-foreground drop-shadow-md">{p.title}</h3>
-                <p className="text-foreground/80 line-clamp-2 drop-shadow-sm font-serif italic">{p.description}</p>
+                <h3 className="text-2xl font-bold text-foreground drop-shadow-md">
+                  {lang === 'es' ? (p.title_es || p.title) : p.title}
+                </h3>
+                <p className="text-foreground/80 line-clamp-2 drop-shadow-sm font-serif italic">
+                  {lang === 'es' ? (p.description_es || p.description) : p.description}
+                </p>
               </div>
             </div>
 

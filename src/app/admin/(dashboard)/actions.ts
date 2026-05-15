@@ -14,13 +14,15 @@ export async function logout() {
 export async function createProject(formData: FormData) {
   const supabase = await createClient()
   const title = formData.get('title') as string
+  const title_es = (formData.get('title_es') as string) || null
   const description = formData.get('description') as string
+  const description_es = (formData.get('description_es') as string) || null
   const project_url = formData.get('project_url') as string
   const image_url = formData.get('image_url') as string
   const is_published = formData.get('is_published') === 'on'
 
   const { error } = await supabase.from('projects').insert({
-    title, description, project_url, image_url, is_published,
+    title, title_es, description, description_es, project_url, image_url, is_published,
   })
 
   if (!error) {
@@ -56,14 +58,16 @@ export async function toggleProjectVisibility(formData: FormData) {
 export async function createTestimonial(formData: FormData) {
   const supabase = await createClient()
   const author_name = formData.get('author_name') as string
-  const author_title = formData.get('author_title') as string
+  const author_title = (formData.get('author_title') as string) || null
+  const author_title_es = (formData.get('author_title_es') as string) || null
   const content = formData.get('content') as string
+  const content_es = (formData.get('content_es') as string) || null
   const rating = parseFloat(formData.get('rating') as string) || 5.0
   const author_image_url = formData.get('author_image_url') as string
   const is_published = formData.get('is_published') === 'on'
 
   const { error } = await supabase.from('testimonials').insert({
-    author_name, author_title, content, rating, author_image_url, is_published,
+    author_name, author_title, author_title_es, content, content_es, rating, author_image_url, is_published,
   })
 
   if (!error) {

@@ -37,6 +37,9 @@
   "portfolio": {
     "headline": "Proyectos Destacados"
   },
+  "testimonials": {
+    "headline": "Lo Que Dicen Mis Clientes"
+  },
   "contact": {
     "headline": "Construyamos la Siguiente Etapa de tu Negocio.",
     "emailUs": "Envíame un Correo",

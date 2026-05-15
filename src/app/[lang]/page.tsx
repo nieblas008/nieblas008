@@ -33,8 +33,8 @@ export default async function Home({
       <Hero dict={dict.hero} />
       <About dict={dict.about} />
       <Services dict={dict.services} />
-      {projects && projects.length > 0 && <Portfolio dict={dict.portfolio} projects={projects} />}
-      {testimonials && testimonials.length > 0 && <Testimonials testimonials={testimonials} />}
+      {projects && projects.length > 0 && <Portfolio dict={dict.portfolio} projects={projects} lang={lang} />}
+      {testimonials && testimonials.length > 0 && <Testimonials testimonials={testimonials} lang={lang} dict={dict.testimonials} />}
       <Contact dict={dict.contact} />
     </>
   );

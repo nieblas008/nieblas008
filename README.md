@@ -58,3 +58,9 @@ My journey starts in 2021, when I decided to apply for Computer Science at CETYS
 This is only the beginning, and I'm excited to see where this journey takes me. I cannot wait to see what I'll be able to accomplish in the future.
 
 **Impossible is nothing.**
+
+---
+
+## 📋 Portfolio Site — Pre-Launch TODOs
+
+- [ ] **Add Open Graph & Twitter/X social meta tags** — `src/app/[lang]/layout.tsx` needs an `openGraph` and `twitter` block in the `metadata` export so the site looks polished when shared on LinkedIn, WhatsApp, or iMessage. Include `title`, `description`, `url`, `siteName`, `images` (1200×630 OG image), and `card: 'summary_large_image'`.

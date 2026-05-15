@@ -37,6 +37,9 @@
   "portfolio": {
     "headline": "Featured Projects"
   },
+  "testimonials": {
+    "headline": "What Clients Say"
+  },
   "contact": {
     "headline": "Let's Build Your Next Stage of Growth.",
     "emailUs": "Email Me",

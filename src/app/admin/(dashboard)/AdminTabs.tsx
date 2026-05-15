@@ -63,13 +63,25 @@ export default function AdminTabs({ projects, testimonials, messages }: { projec
                   Add New Project
                 </h3>
                 <form action={createProject} className="flex flex-col gap-5 text-zinc-300">
-                  <div>
-                    <label className="block text-xs font-semibold mb-2 uppercase text-zinc-500">Title</label>
-                    <input name="title" required className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-2.5 text-white outline-none focus:border-blue-500 transition-colors" />
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <label className="block text-xs font-semibold mb-2 uppercase text-zinc-500">Title (EN)</label>
+                      <input name="title" required className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-2.5 text-white outline-none focus:border-blue-500 transition-colors" />
+                    </div>
+                    <div>
+                      <label className="block text-xs font-semibold mb-2 uppercase text-zinc-500">Título (ES)</label>
+                      <input name="title_es" className="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-4 py-2.5 text-white outline-none focus:border-blue-400 transition-colors" />
+                    </div>
                   </div>
-                  <div>
-                    <label className="block text-xs font-semibold mb-2 uppercase text-zinc-500">Description</label>
-                    <textarea name="description" required rows={3} className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-2.5 text-white outline-none focus:border-blue-500 transition-colors" />
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <label className="block text-xs font-semibold mb-2 uppercase text-zinc-500">Description (EN)</label>
+                      <textarea name="description" required rows={3} className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-2.5 text-white outline-none focus:border-blue-500 transition-colors" />
+                    </div>
+                    <div>
+                      <label className="block text-xs font-semibold mb-2 uppercase text-zinc-500">Descripción (ES)</label>
+                      <textarea name="description_es" rows={3} className="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-4 py-2.5 text-white outline-none focus:border-blue-400 transition-colors" />
+                    </div>
                   </div>
                   <div>
                     <label className="block text-xs font-semibold mb-2 uppercase text-zinc-500">Image URL</label>
@@ -149,9 +161,15 @@ export default function AdminTabs({ projects, testimonials, messages }: { projec
                     <label className="block text-xs font-semibold mb-2 uppercase text-zinc-500">Author Name</label>
                     <input name="author_name" required className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-2.5 text-white outline-none focus:border-green-500 transition-colors" />
                   </div>
-                  <div>
-                    <label className="block text-xs font-semibold mb-2 uppercase text-zinc-500">Author Title (Optional)</label>
-                    <input name="author_title" placeholder="e.g. CEO, Google" className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-2.5 text-white outline-none focus:border-green-500 transition-colors" />
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <label className="block text-xs font-semibold mb-2 uppercase text-zinc-500">Author Title (EN)</label>
+                      <input name="author_title" placeholder="e.g. CEO, Google" className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-2.5 text-white outline-none focus:border-green-500 transition-colors" />
+                    </div>
+                    <div>
+                      <label className="block text-xs font-semibold mb-2 uppercase text-zinc-500">Cargo (ES)</label>
+                      <input name="author_title_es" placeholder="p.ej. CEO, Google" className="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-4 py-2.5 text-white outline-none focus:border-green-400 transition-colors" />
+                    </div>
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
@@ -163,9 +181,15 @@ export default function AdminTabs({ projects, testimonials, messages }: { projec
                       <input name="author_image_url" placeholder="https://..." className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-2.5 text-white outline-none focus:border-green-500 transition-colors" />
                     </div>
                   </div>
-                  <div>
-                    <label className="block text-xs font-semibold mb-2 uppercase text-zinc-500">Content / Review</label>
-                    <textarea name="content" required rows={4} className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-2.5 text-white outline-none focus:border-green-500 transition-colors" />
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <label className="block text-xs font-semibold mb-2 uppercase text-zinc-500">Content / Review (EN)</label>
+                      <textarea name="content" required rows={4} className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-2.5 text-white outline-none focus:border-green-500 transition-colors" />
+                    </div>
+                    <div>
+                      <label className="block text-xs font-semibold mb-2 uppercase text-zinc-500">Contenido (ES)</label>
+                      <textarea name="content_es" rows={4} className="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-4 py-2.5 text-white outline-none focus:border-green-400 transition-colors" />
+                    </div>
                   </div>
                   <div className="flex items-center gap-2 py-2">
                     <input name="is_published" id="is_published_test" type="checkbox" defaultChecked className="w-4 h-4 accent-green-500" />
@@ -197,7 +221,13 @@ export default function AdminTabs({ projects, testimonials, messages }: { projec
                             </div>
                             <div>
                               <h4 className="font-bold text-white leading-tight">{t.author_name}</h4>
-                              <div className="text-xs text-zinc-500">{t.author_title || 'Client'}</div>
+                              <div className="text-xs text-zinc-500">
+                                {t.author_title || 'Client'}
+                                {t.author_title && (t.author_title_es
+                                  ? <span className="text-zinc-600"> · ES: {t.author_title_es}</span>
+                                  : <span className="text-yellow-800"> · ES: —</span>
+                                )}
+                              </div>
                             </div>
                             <div className="ml-auto flex items-center gap-1 bg-zinc-950 px-2.5 py-1 rounded-full border border-zinc-800">
                               <StarIcon className="w-3 h-3 fill-yellow-500 text-yellow-500" />
@@ -205,6 +235,12 @@ export default function AdminTabs({ projects, testimonials, messages }: { projec
                             </div>
                           </div>
                           <p className="text-sm text-zinc-300 italic leading-relaxed border-l-2 border-zinc-800 pl-4">"{t.content}"</p>
+                          <p className="text-xs italic pl-4 border-l-2 border-zinc-700 mt-2">
+                            {t.content_es
+                              ? <span className="text-zinc-500">ES: "{t.content_es}"</span>
+                              : <span className="text-yellow-700">ES: No translation added</span>
+                            }
+                          </p>
                         </div>
                         <div className="flex items-center gap-2 sm:flex-col sm:justify-center sm:w-32 sm:border-l border-zinc-800 sm:pl-4">
                           <form action={toggleTestimonialVisibility} className="w-full">

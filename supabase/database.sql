@@ -5,7 +5,9 @@
 CREATE TABLE public.projects (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   title TEXT NOT NULL,
+  title_es TEXT,
   description TEXT NOT NULL,
+  description_es TEXT,
   image_url TEXT,
   project_url TEXT,
   is_published BOOLEAN DEFAULT true,
@@ -17,7 +19,9 @@ CREATE TABLE public.testimonials (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   author_name TEXT NOT NULL,
   author_title TEXT,
+  author_title_es TEXT,
   content TEXT NOT NULL,
+  content_es TEXT,
   is_published BOOLEAN DEFAULT true,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
 );
