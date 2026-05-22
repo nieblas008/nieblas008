@@ -34,6 +34,7 @@ export async function proxy(request: NextRequest) {
   if (
     pathname.startsWith('/_next') ||
     pathname.startsWith('/admin') ||
+    pathname.startsWith('/nicoles-cafe') ||
     pathname.includes('/api/') ||
     pathname.match(/\.(png|jpg|jpeg|svg|ico)$/)
   ) {
