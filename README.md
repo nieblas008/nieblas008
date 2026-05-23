@@ -1,66 +1,65 @@
 # 🧑🏻‍💻 **Ricardo Nieblas Cabrera**
 
+<!-- ===================== HERO ===================== -->
+
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=24&pause=1000&color=2450D6&width=435&lines=Impossible+is+nothing)](https://git.io/typing-svg)
 
-I'm a developer focused primarily on web development, building the best version of myself, one step at a time. I love to learn new things, always looking for new challenges to overcome and new ways to improve my skills.
+<!-- ===================== ABOUT ===================== -->
 
-All coding projects are built from the ground up, from planning and designing all the way to solving real-life problems with code. I'll do my best on adapting to your needs and creating a solution that matches exactly all your needs.
+## About Me
 
-Wanna get in touch with me? Happy to help! Reach me out at [dev.nieblas\@icloud.com](mailto:dev.nieblas\@icloud.com)
+I'm a developer focused on **web development**, building the best version of myself, one step at a time. I love learning new things, chasing new challenges, and finding better ways to solve real problems with code. Every project I take on is built from the ground up — from planning and design all the way to a working solution. I adapt to your needs and craft something that fits them exactly.
 
-#
+- Running **[ricardonieblas.com](https://ricardonieblas.com)** — fast, modern websites for small businesses
+- Reach me at **[dev.nieblas@icloud.com](mailto:dev.nieblas@icloud.com)**
 
-### 🧰 **Languages and Tools**
+<!-- ===================== TECH STACK ===================== -->
 
-<img align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-<img align="left" alt="C++" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-<img align="left" alt="Swift" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" />
-<img align="left" alt="C++" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
-<img align="left" alt="C" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
-<img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-<img align="left" alt="HTML" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-<img align="left" alt="CSS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-<img align=left alt="React" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-<img align="left" alt="Typescript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-<img align="left" alt="Sass" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
-<img align="left" alt="Git" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+## Tech Stack
 
-<br />
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-#
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-### 📊 **Stats**
+<!-- ===================== STATS ===================== -->
 
-[![Ricardo's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=nieblas008&show_icons=true&theme=dark&count_private=true&bg_color=00000000#gh-dark-mode-only)](https://github.com/nieblas008/github-readme-stats#gh-dark-mode-only)
+## GitHub Stats
 
-[![Ricardo's GitHub stats-Light](https://github-readme-stats.vercel.app/api?username=nieblas008&show_icons=true&theme=default&count_private=true&bg_color=00000000#gh-light-mode-only)](https://github.com/nieblas008/github-readme-stats#gh-light-mode-only)
+<div align="center">
 
-<!--
+<img src="https://streak-stats.demolab.com?user=nieblas008&hide_border=true&theme=tokyonight" alt="Ricardo's contribution streak" />
 
-#
+</div>
 
-### 👨‍💻 **Ricardo's Coding Journey**
+<!-- ===================== SNAKE ===================== -->
 
-My journey starts in 2021, when I decided to apply for Computer Science at CETYS University. Truth be told, one week before I had to choose my career I was thinking about Mechanical Engineering. I've always liked computers and thought CS would be a better fit for me. Although I had no prior coding experience, now I can confidently say I made the right choice.
+## Watch the Snake Eat My Commits
 
-1. **First semester**: I started getting my feet wet into the world of coding, learning the basics of Python. I also started learning how to use GitHub and Git, which I still use to this day. My main project was a Discord bot with the use of the discord.py library. This is what allowed me to gather all the knowledge I had learned during the semester and apply it to a real project.
+<div align="center">
 
-2. **Second semester**: I started learning C++ and C, with object oriented programming being the main topic of this semester. I created a terminal program for hospital management that allowed me to create, read, update, and delete information about doctors and patients.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nieblas008/nieblas008/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nieblas008/nieblas008/output/github-snake.svg" />
+  <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/nieblas008/nieblas008/output/github-snake.svg" />
+</picture>
 
-3. **Third semester**: I learned about Data Structures. The stereotypical information you hear about software development interviews: linked lists, stacks, sorting systems, graphs, etc. This is also the time when I started [@STACK](https://github.com/stack-cetys), a programming focused student club.
+</div>
 
-4. **Fourth semester**: At this time I got to learn about graphics and visualization, as well as analysis of algorithms (time complexity stuff). Outside of school I also started learning Swift, which is what I'm currently focusing on for participating on Apple's Swift Student Challenge.
+<!-- ===================== FOOTER ===================== -->
 
-5. **Fifth semester**: This is where I started learning about Machine Learning. I created a program that would detect the user's emotions based on their facial expressions. I also gained some skills regarding project management, as I was the project manager for a team of 5 people. -->
+<div align="center">
 
-<!-- 6. **Sixth semester**: probably talk about the solo developer business -->
+### Have a project in mind? Let's build it together.
 
-This is only the beginning, and I'm excited to see where this journey takes me. I cannot wait to see what I'll be able to accomplish in the future.
+[![Get in touch](https://img.shields.io/badge/Get%20in%20touch-hello@ricardonieblas.com-2450D6?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hello@ricardonieblas.com)
 
-**Impossible is nothing.**
+<i>Impossible is nothing.</i>
 
----
-
-## 📋 Portfolio Site — Pre-Launch TODOs
-
-- [ ] **Add Open Graph & Twitter/X social meta tags** — `src/app/[lang]/layout.tsx` needs an `openGraph` and `twitter` block in the `metadata` export so the site looks polished when shared on LinkedIn, WhatsApp, or iMessage. Include `title`, `description`, `url`, `siteName`, `images` (1200×630 OG image), and `card: 'summary_large_image'`.
+</div>
