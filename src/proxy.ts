@@ -36,6 +36,7 @@ export async function proxy(request: NextRequest) {
     pathname.startsWith('/admin') ||
     pathname.startsWith('/nicoles-cafe') ||
     pathname.startsWith('/the-forge') ||
+    pathname.startsWith('/vessel-and-vine') ||
     pathname.includes('/api/') ||
     pathname.match(/\.(png|jpg|jpeg|svg|ico)$/)
   ) {
