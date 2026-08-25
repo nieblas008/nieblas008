@@ -30,15 +30,26 @@ export async function proxy(request: NextRequest) {
     }
   }
 
+  // Crawler- and browser-facing files that must stay at the root. Locale
+  // prefixing them sent /sitemap.xml and /robots.txt to 307s pointing at
+  // routes that do not exist, so search engines could not read either.
+  const isWellKnownFile =
+    pathname === '/sitemap.xml' ||
+    pathname === '/robots.txt' ||
+    pathname === '/site.webmanifest' ||
+    pathname === '/manifest.json' ||
+    pathname.startsWith('/.well-known/');
+
   // Skip if it is a public file, API route, or the admin dashboard
   if (
+    isWellKnownFile ||
     pathname.startsWith('/_next') ||
     pathname.startsWith('/admin') ||
     pathname.startsWith('/nicoles-cafe') ||
     pathname.startsWith('/the-forge') ||
     pathname.startsWith('/vessel-and-vine') ||
     pathname.includes('/api/') ||
-    pathname.match(/\.(png|jpg|jpeg|svg|ico)$/)
+    pathname.match(/\.(png|jpg|jpeg|webp|avif|gif|svg|ico|txt|xml|webmanifest)$/)
   ) {
     return supabaseResponse;
   }

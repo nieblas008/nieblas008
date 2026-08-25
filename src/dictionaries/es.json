@@ -1,11 +1,19 @@
 {
+  "meta": {
+    "title": "Ricardo Nieblas | Sitios Web Premium para Negocios en Crecimiento",
+    "description": "Diseño y desarrollo sitios web de alta conversión para pequeñas empresas en México y Estados Unidos. Bilingüe, rápido y creado para convertir visitantes en clientes.",
+    "ogAlt": "Desarrollo web premium por Ricardo Nieblas para negocios en México y Estados Unidos"
+  },
   "navigation": {
     "about": "Sobre mí",
     "services": "Servicios",
     "portfolio": "Portafolio",
     "testimonials": "Testimonios",
     "contact": "Contacto",
-    "switchLang": "EN"
+    "switchLang": "EN",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "home": "Volver arriba"
   },
   "hero": {
     "headline": "Convierte a tu Audiencia en Clientes de Alto Valor.",
@@ -15,7 +23,13 @@
   },
   "about": {
     "headline": "Más que un desarrollador. Tu aliado digital.",
-    "copy": "Creo experiencias web de primer nivel que hacen que tu negocio luzca premium y funcione sin fallas. Al combinar ingeniería robusta con diseño intuitivo, desarrollo plataformas digitales que no solo se ven increíbles, sino que generan ventas, construyen confianza y convierten visitantes en clientes reales."
+    "copy": "Creo experiencias web de primer nivel que hacen que tu negocio luzca premium y funcione sin fallas. Al combinar ingeniería robusta con diseño intuitivo, desarrollo plataformas digitales que no solo se ven increíbles, sino que generan ventas, construyen confianza y convierten visitantes en clientes reales.",
+    "role": "Ingeniero Web Premium",
+    "credentials": [
+      "Bilingüe en español e inglés",
+      "Atiendo México y Estados Unidos",
+      "Trato directo conmigo, sin agencias de por medio"
+    ]
   },
   "services": {
     "headline": "Cómo Te Ayudo a Crecer",
@@ -35,20 +49,44 @@
     ]
   },
   "portfolio": {
-    "headline": "Proyectos Destacados"
+    "headline": "Proyectos Destacados",
+    "viewLive": "Ver en vivo"
   },
   "testimonials": {
     "headline": "Lo Que Dicen Mis Clientes"
   },
   "contact": {
     "headline": "Construyamos la Siguiente Etapa de tu Negocio.",
+    "subcopy": "Cuéntame qué estás construyendo. Leo cada mensaje personalmente y respondo en menos de un día hábil.",
     "emailUs": "Envíame un Correo",
+    "whatsapp": "Escríbeme por WhatsApp",
+    "whatsappHint": "Respuesta más rápida",
+    "whatsappMessage": "Hola Ricardo, encontré tu sitio web y me gustaría platicar sobre un proyecto.",
     "bookCall": "Agenda una Consulta Gratuita",
+    "responseTime": "Tiempo de respuesta habitual: menos de 24 horas, lunes a viernes.",
     "form": {
       "name": "Tu Nombre",
       "email": "Tu Correo",
       "message": "Cuéntame sobre los objetivos de tu negocio y qué te gustaría lograr",
-      "submit": "Comenzar Proyecto"
+      "submit": "Comenzar Proyecto",
+      "sending": "Enviando…",
+      "privacy": "Tus datos se usan únicamente para responderte. Nunca se comparten ni se venden.",
+      "successTitle": "Mensaje enviado",
+      "successBody": "Gracias por escribirme. Te respondo por correo en menos de un día hábil.",
+      "sendAnother": "Enviar otro mensaje",
+      "errorTitle": "Algo salió mal",
+      "errorGeneric": "No se pudo enviar tu mensaje. Inténtalo de nuevo o escríbeme directo por correo.",
+      "errorName": "Por favor escribe tu nombre.",
+      "errorEmail": "Por favor escribe un correo electrónico válido.",
+      "errorMessage": "Cuéntame un poco sobre tu proyecto."
     }
+  },
+  "footer": {
+    "tagline": "Sitios web premium para negocios en México y Estados Unidos.",
+    "contactHeading": "Contacto",
+    "navHeading": "Explora",
+    "rights": "Todos los derechos reservados.",
+    "location": "Basado en México. Trabajo con clientes en México y Estados Unidos.",
+    "builtWith": "Diseñado y desarrollado por Ricardo Nieblas."
   }
 }

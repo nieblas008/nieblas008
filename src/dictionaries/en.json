@@ -1,11 +1,19 @@
 {
+  "meta": {
+    "title": "Ricardo Nieblas | Premium Websites for Growing Businesses",
+    "description": "I design and build high-converting websites for small businesses in Mexico and the United States. Bilingual, fast, and built to turn visitors into clients.",
+    "ogAlt": "Premium web development by Ricardo Nieblas for businesses in Mexico and the United States"
+  },
   "navigation": {
     "about": "About",
     "services": "Services",
     "portfolio": "Portfolio",
     "testimonials": "Testimonials",
     "contact": "Contact",
-    "switchLang": "ES"
+    "switchLang": "ES",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "home": "Back to top"
   },
   "hero": {
     "headline": "Turn Your Audience into High-Paying Clients.",
@@ -15,7 +23,13 @@
   },
   "about": {
     "headline": "Not just a developer. Your technical partner.",
-    "copy": "I build world-class web experiences that make your business look premium and perform flawlessly. By combining rock-solid engineering with intuitive design, I create digital storefronts that don't just look good—they actually drive growth, build trust, and convert visitors into clients."
+    "copy": "I build world-class web experiences that make your business look premium and perform flawlessly. By combining rock-solid engineering with intuitive design, I create digital storefronts that don't just look good. They drive growth, build trust, and convert visitors into clients.",
+    "role": "Premium Web Engineer",
+    "credentials": [
+      "Bilingual in English and Spanish",
+      "Serving Mexico & the United States",
+      "Direct with me, no agency middlemen"
+    ]
   },
   "services": {
     "headline": "How I Help You Grow",
@@ -35,20 +49,44 @@
     ]
   },
   "portfolio": {
-    "headline": "Featured Projects"
+    "headline": "Featured Projects",
+    "viewLive": "View live"
   },
   "testimonials": {
     "headline": "What Clients Say"
   },
   "contact": {
     "headline": "Let's Build Your Next Stage of Growth.",
+    "subcopy": "Tell me what you're building. I read every message personally and reply within one business day.",
     "emailUs": "Email Me",
+    "whatsapp": "Message me on WhatsApp",
+    "whatsappHint": "Fastest reply",
+    "whatsappMessage": "Hi Ricardo, I found your website and I'd like to talk about a project.",
     "bookCall": "Book a Free Consultation",
+    "responseTime": "Typical reply time: under 24 hours, Monday to Friday.",
     "form": {
       "name": "Your Name",
       "email": "Your Email",
       "message": "Tell me about your business goals and what you want to achieve",
-      "submit": "Get Your Custom Proposal"
+      "submit": "Get Your Custom Proposal",
+      "sending": "Sending…",
+      "privacy": "Your details are only used to reply to you. Never shared, never sold.",
+      "successTitle": "Message sent",
+      "successBody": "Thanks for reaching out. I'll get back to you by email within one business day.",
+      "sendAnother": "Send another message",
+      "errorTitle": "Something went wrong",
+      "errorGeneric": "Your message couldn't be sent. Please try again, or email me directly.",
+      "errorName": "Please enter your name.",
+      "errorEmail": "Please enter a valid email address.",
+      "errorMessage": "Please tell me a little about your project."
     }
+  },
+  "footer": {
+    "tagline": "Premium websites for businesses in Mexico and the United States.",
+    "contactHeading": "Get in touch",
+    "navHeading": "Explore",
+    "rights": "All rights reserved.",
+    "location": "Based in Mexico. Working with clients across Mexico and the U.S.",
+    "builtWith": "Designed and built by Ricardo Nieblas."
   }
 }
